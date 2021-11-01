@@ -1,5 +1,8 @@
-module "vpc" {
-  source       = "github.com/aivarassterasky/terraform-google-network"
+
+module "network" {
+  source  = "app.terraform.io/example-org-fa4d68/network/google"
+  version = "3.4.0"
+  # insert required variables here
   network_name = "gaurav-network"
   project_id   = var.project
   subnets = [
