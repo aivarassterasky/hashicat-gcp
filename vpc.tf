@@ -6,7 +6,7 @@ module "vpc" {
   subnets = [
     {
       subnet_name   = "gaurav1-subnet"
-      subnet_ip     = "10.100.10.0/24"
+      subnet_ip     = "10.101.10.0/24"
       subnet_region = var.region
     }
   ]
